@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Canteen App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>E-Canteen App</h1>
+    </header>
+
+    <div class="container">
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Veg_Biryani.jpg/1200px-Veg_Biryani.jpg" alt="Veg Biriyani">
+            <h2>Veg Biriyani</h2>
+            <p class="price" data-price="100">₹100</p>
+            <button onclick="addItem('Veg Biriyani', 100)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/A_small_cup_of_coffee.JPG" alt="Coffee">
+            <h2>Coffee</h2>
+            <p class="price" data-price="30">₹30</p>
+            <button onclick="addItem('Coffee', 30)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/80?text=Tea" alt="Tea">
+            <h2>Tea</h2>
+            <p class="price" data-price="20">₹20</p>
+            <button onclick="addItem('Tea', 20)">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="https://via.placeholder.com/80?text=Veg+Meals" alt="Veg Meals">
+            <h2>Veg Meals</h2>
+            <p class="price" data-price="80">₹80</p>
+            <button onclick="addItem('Veg Meals', 80)">Add to Cart</button>
+        </div>
+
+        <div class="cart">
+            <h3>Cart</h3>
+            <p id="cartItems">No items in the cart</p>
+            <p><strong>Total Amount: ₹<span id="totalAmount">0</span></strong></p>
+            <button onclick="placeOrder()">Place Order</button>
+        </div>
+
+        <div class="order-success" id="orderSuccess">
+            Order Placed Successfully!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
